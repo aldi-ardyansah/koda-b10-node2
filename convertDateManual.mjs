@@ -1,4 +1,3 @@
-
 function convertDateManual(inputDate) {
     const potongan = inputDate.split('-');
 

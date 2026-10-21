@@ -1,12 +1,25 @@
+import readline from 'node:readline/promises';
+import { stdin as input, stdout as output } from 'node:process';
+
 import convertDateMoment from './convertDateMoment.mjs';
 import convertDateManual from './convertDateManual.mjs';
 
-// Konversi tanggal menggunakan module moment.
-console.log("Konversi tanggal menggunakan moment:");
-console.log(convertDateMoment("24-04-2015"));
+async function index() {
+    const rl = readline.createInterface({ input, output });
 
-console.log("");
+    try {
+        const inputDate = await rl.question(
+            'Masukkan tanggal (DD-MM-YYYY): '
+        );
 
-// Konversi tanggal manual.
-console.log("Konversi tanggal manual:");
-console.log(convertDateManual("24-04-2015"));
+        console.log('\nKonversi format tanggal menggunakan moment:');
+        console.log(convertDateMoment(inputDate));
+
+        console.log('\nKonversi format tanggal manual:');
+        console.log(convertDateManual(inputDate));
+    } finally {
+        rl.close();
+    }
+}
+
+index();
