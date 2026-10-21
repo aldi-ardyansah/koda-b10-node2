@@ -28,7 +28,10 @@ function convertDateManual(inputDate) {
         potongan.length !== 3 ||
         potongan[0].length !== 2 ||
         potongan[1].length !== 2 ||
-        potongan[2].length !== 4
+        potongan[2].length !== 4 ||
+        isNaN(potongan[0]) ||
+        isNaN(potongan[1]) ||
+        isNaN(potongan[2])
     ) {
         return "Format tanggal salah!";
     }
