@@ -1,5 +1,5 @@
 // Konversi tanggal menggunakan module moment.
-console.log("Konversi tanggal menggunakan moment.");
+console.log("Konversi tanggal menggunakan moment:");
 
 const moment = require('moment');
 
@@ -20,7 +20,7 @@ console.log(convertDateMoment("24-04-2015"));
 console.log("");
 
 // Konversi tanggal manual.
-console.log("Konversi tanggal manual.");
+console.log("Konversi tanggal manual:");
 
 function convertDateManual(inputDate) {
     const potongan = inputDate.split('-');
