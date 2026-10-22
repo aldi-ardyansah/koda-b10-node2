@@ -1,9 +1,8 @@
 {
   "name": "koda-b10-node2",
   "version": "1.0.0",
-  "description": "Program untuk mengonversi format tanggal secara manual dan menggunakan module moment.",
+  "description": "Mengonversi Format Penanggalan Tanpa Module dan Menggunakan Module Moment.js.",
   "keywords": [
-    "moment",
     "cli"
   ],
   "homepage": "https://github.com/aldi-ardyansah/koda-b10-node2#readme",
@@ -24,13 +23,13 @@
     "lint": "eslint *.js *.cjs *.mjs **/*.js **/*.cjs **/*.mjs",
     "lint:fix": "eslint *.js *.cjs *.mjs **/*.js **/*.cjs **/*.mjs --fix"
   },
-  "dependencies": {
-    "moment": "^2.31.0"
-  },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
     "eslint": "^10.13.0",
     "globals": "^17.13.0"
+  },
+  "dependencies": {
+    "moment": "^2.31.0"
   }
 }

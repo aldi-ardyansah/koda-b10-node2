@@ -1,6 +1,6 @@
 # Node.js 2
 
-## Mengonversi format penanggalan menggunakan module Moment.js dan tanpa module
+## Mengonversi Format Penanggalan Tanpa Module dan Menggunakan Module Moment.js
 
 ### Kode index.mjs
 ```javascript
