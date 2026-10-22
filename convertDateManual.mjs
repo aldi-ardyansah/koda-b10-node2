@@ -1,5 +1,5 @@
 function convertDateManual(inputDate) {
-    const potongan = inputDate.split('-');
+    const potongan = inputDate.split("-");
 
     if (
         potongan.length !== 3 ||
@@ -27,7 +27,7 @@ function convertDateManual(inputDate) {
         return "Format tanggal salah!";
     }
 
-    return potongan.join('/');
+    return potongan.join("/");
 }
 
 export default convertDateManual;
